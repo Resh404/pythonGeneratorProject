@@ -12,16 +12,16 @@ if __name__ == '__main__':
     current_database = DatabaseTextFile(database, table, "localhost", "root",
                                         "Kom12345", "3306")
     # 87 sec
-    # current_database.database_data_to_text("utf-8", 3000000)
+    #current_database.database_data_to_text("utf-8", 3000000)
 
     filtered_data = DataFiltering("salaries_data.txt", "utf-8")
 
-    # filtered_data.isolate_entry("yearly_income.txt", 1)
+    #filtered_data.isolate_entry("yearly_income.txt", 1)
 
-    # filtered_data.filter_out_("Out_filtered_entries", "")
+    #filtered_data.filter_out_("Out_filtered_entries", "")
 
     visualize_data = DataVisualizer("yearly_income.txt", 100)
-    # visualize_data.histogram_of_salaries()
+    #visualize_data.histogram_of_salaries()
 
     print(time.time()-start)
 
