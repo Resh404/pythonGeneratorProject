@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     #filtered_data.isolate_entry("yearly_income.txt", 1)
 
-    #filtered_data.filter_out_("Out_filtered_entries", "")
+    #filtered_data.filter_out_("Out_filtered_entries", "strings")
 
     visualize_data = DataVisualizer("yearly_income.txt", 100)
     #visualize_data.histogram_of_salaries()

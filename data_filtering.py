@@ -11,11 +11,11 @@ class DataFiltering:
         except FileNotFoundError:
             print(f"Error: File '{self.target_file_name}' not found.")
         except PermissionError:
-            print(f"Error: Permission denied while trying to access file '{self.target_file_name}'.")
+            print(f"Error: Permission denied to access file '{self.target_file_name}'.")
         except UnicodeDecodeError:
             print(f"Error: Unable to decode file '{self.target_file_name}' using encoding '{self.data_encoding}'.")
         except Exception as e:
-            print(f"Error: An unexpected error occurred: {e}")
+            print(f"Error: Unexpected error occurred: {e}")
 
     def isolate_entry(self, filtered_data_file_name: str, index: int):
         try:
@@ -25,7 +25,7 @@ class DataFiltering:
                     entry = line_entries[index]
                     output_file.write(entry + "\n")
         except Exception as e:
-            print(f"Error: An unexpected error occurred while writing to file: {e}")
+            print(f"Error: Error writing to file: {e}")
 
     def filter_out_(self, filtered_data_file_name: str, str_or_int_entries):
         try:
@@ -51,4 +51,4 @@ class DataFiltering:
                     else:
                         output_file.write(",".join(str_line) + "\n")
         except Exception as e:
-            print(f"Error: An unexpected error occurred while writing to file: {e}")
+            print(f"Error: Unexpected error occurred: {e}")

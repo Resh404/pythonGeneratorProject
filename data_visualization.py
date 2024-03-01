@@ -26,12 +26,12 @@ class DataVisualizer:
             plt.title('Histogram of Salaries')
 
             # Show the plot
-            plt.grid(True)  # Add gridlines
-            plt.tight_layout()  # Adjust layout
+            plt.grid(True)
+            plt.tight_layout()
             plt.show()
         except FileNotFoundError:
             print(f"Error: File '{self.data_file_name}' not found.")
         except ValueError:
             print(f"Error: Unable to parse data in '{self.data_file_name}'")
         except Exception as e:
-            print(f"Error: An unexpected error occurred: {e}")
+            print(f"Error: Unexpected error occurred: {e}")

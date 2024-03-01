@@ -35,7 +35,7 @@ class DatabaseTextFile:
             my_database.close()
 
         except mysql.connector.Error as err:
-            print("Sql error:", err)
+            print("Sql error: SQL database error", err)
 
     def database_data_to_text(self, data_encoding: str, limit: int):
         i = 0
@@ -48,4 +48,4 @@ class DatabaseTextFile:
                     if i >= limit:
                         break
         except Exception as e:
-            print("Error:", e)
+            print("Error: Unexpected error occurred", e)
