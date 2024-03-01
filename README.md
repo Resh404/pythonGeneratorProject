@@ -1,62 +1,36 @@
 # Python generators
-
-Simple overview of use/purpose.
-
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Each module contains a class for the implementation of specific task.
+The main class imports the modules and uses the functionality of the modules to create a text file of a table from a database and use its content for data analyses.
+
+From https://dev.mysql.com/doc/index-other.html the employee database is created locally. 
+The data from salaries_data.txt file is obtained from the employee sample database and is analysed in this project. 
+The file can also be in this cdGitHub. 
 
 ## Getting Started
-
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+Packages
+* pytest
+* matplotlib
+* pytest-mock
+* pytest-mpl
+* mysql-connector-python
+* time
+* matplotlib
+* os
 
-### Installing
+IDE
+* PyCharm
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+Operating system
+* Windows 10
 
-### Executing program
+### Installing & executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+* Download zip/clone from here -> unzip -> create separate interpreters for mockedTests, noneMockedTests and main script.
 
-## Help
+## Help & Authors
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+[@Resh404](https://github.com/resh404)
